@@ -1,0 +1,20 @@
+{
+  "providerId": "keap.com",
+  "providerName": "Keap",
+  "serviceId": "custom-sub-domain-landing-pages-intg",
+  "serviceName": "Landing Pages Custom Subdomain",
+  "version": 1,
+  "logoUrl": "https://files.infusionsoft.com/keap/wordmark-green.png",
+  "description": "Enables a sub-domain to work with Keap Landing Pages",
+  "syncRedirectDomain": "integration.keap.app,*.infusiontest.com",
+  "syncPubKeyDomain": "integration.keap.app",
+  "hostRequired": false,
+  "records": [
+    {
+      "type": "CNAME",
+      "host": "%subdomain%",
+      "pointsTo": "pages.intg.keap.page",
+      "ttl": 600
+    }
+  ]
+}
